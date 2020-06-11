@@ -10,6 +10,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
+   #header {background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,45,78,0.8) 55%, rgba(17,45,78,0.1) 100%), url('header.jpg') center center no-repeat;
+  background-size: cover;
+  border-radius: 0px!important;
+  padding-right: 0px;}
    body {scroll-behavior: smooth;}
   .footer-link { padding:0px 10px; color: white;}
   .fakeimg {
@@ -26,33 +30,33 @@
   .navbar-nav .nav-link {
     color: #ffffff!important;
   }
-  #logo1, #logo2 {
-    max-width: 80%;
-  }
+  
   @media screen and (max-width: 480px) {
-    #logo2div {display: none;}
-    #logo1 {max-width: 60%;}
+    #logo {max-width: 60%;}
+    #header {background:linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(17,45,78,0.8) 55%, rgba(17,45,78,0.1) 100%), url('header.jpg') center center no-repeat;}
+
   }
+  #logo {width: 80%;
+    max-width: 120px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 100px;}
   </style>
 </head>
 <body>
-<div class="jumbotron text-center" style="margin-bottom:0; background-color: #e9ca;">
+<div class="jumbotron text-center" style="margin-bottom:0;" id="header">
   <div class="row">
+    <div class="col-md-10">
+      <h1 class="animated fadeInDown" style="width: fit-content; font-size: 3rem; animation-duration: 3s; color: #f6f6f6; margin-bottom: 30px;">Prerna Rural Development Society</h1>
+      <p class="animated rotateInUpRight" style="letter-spacing: 0.04rem; color: #ffffff; animation-duration: 3s; width: fit-content;">The people not only aware the information but also invlolve in the development process for their peaceful and better life style</p>
+    </div>
   <div class="col-md-2">
-    <img src="log.svg" class="img-fluid" id="logo1">
-  </div>
-  <div class="col-md-8">
-    <h1 class="animated fadeInDown" style="font-size: 3rem; animation-duration: 3s; text-shadow: 3px 3px 5px #ffffff; color: #112d4e;">Prerna Rural Development Society</h1>
-    <p class="animated rotateInUpRight" style="color: #e84545; animation-duration: 3s;">The people not only aware the information but also invlolve in the development process for their peaceful and better life style</p>
-  </div>
-  <div class="col-md-2" id="logo2div">
-    <img src="log.svg" class="img-fluid" id="logo2">
+    <img src="log.svg" class="img-fluid" id="logo" style="color: white;">
   </div>
   </div> 
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="animation-duration: 2.5s;">
-  <a class="navbar-brand" href="#">Home</a>
+  <a class="navbar-brand" href="">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
